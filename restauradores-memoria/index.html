@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Restauradores de la Memoria | Colegio Tom Adams IED</title>
+<meta name="description" content="Portal del proyecto Restauradores de la Memoria del Colegio Tom Adams IED.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top">
+  <a class="logo" href="#inicio" aria-label="Restauradores de la Memoria, inicio"><span>Restauradores</span> de la Memoria</a>
+  <button id="menu-btn" aria-expanded="false" aria-controls="nav">Menú</button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#proyecto">El proyecto</a><a href="#museo">Museo</a><a href="#salidas">Salidas</a><a href="#fechas">Fechas</a>
+    <a href="#eventos">Eventos</a><a href="#reconocimientos">Reconocimientos</a><a href="#alianzas">Alianzas</a>
+    <a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main id="main">
+<section id="inicio" class="hero" aria-labelledby="t-inicio">
+  <div>
+    <h1 id="t-inicio">Restauradores de la Memoria</h1>
+    <p class="lead">Un proyecto del Colegio Tom Adams IED para reunir, conservar y compartir la memoria de nuestra comunidad escolar.</p>
+    <p><a class="btn primary" href="museo/index.html">Entrar al Museo Virtual</a> <a class="btn" href="#proyecto">Conocer el proyecto</a></p>
+  </div>
+  <aside class="ficha" aria-label="Ficha de archivo del proyecto">
+    <h2>Ficha de archivo</h2>
+    <dl>
+      <div><dt>Institución</dt><dd>Colegio Tom Adams IED</dd></div>
+      <div><dt>Proyecto</dt><dd>Restauradores de la Memoria</dd></div>
+      <div><dt>Fundación</dt><dd><em class="pend">Por verificar</em></dd></div>
+      <div><dt>Logotipo</dt><dd>Provisional (tipográfico)</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="proyecto" aria-labelledby="t-proyecto">
+  <h2 id="t-proyecto">¿Qué es Restauradores de la Memoria?</h2>
+  <div class="cols">
+    <div>
+      <h3>Propósito</h3>
+      <p class="tag">Texto confirmado en el planteamiento del proyecto</p>
+      <p>Divulgar, organizar y preservar la memoria institucional del Colegio Tom Adams IED, y permitir que visitantes conozcan su trayectoria, consulten actividades, exploren fotografías y descubran objetos históricos.</p>
+    </div>
+    <div>
+      <h3>Historia, trayectoria y objetivos</h3>
+      <p class="tag">Pendiente de verificar: falta el documento oficial</p>
+      <p>Este espacio recibirá la historia del proyecto, sus objetivos y su importancia para la memoria colectiva, tomados de los documentos oficiales. No se incluyen datos históricos hasta confirmarlos.</p>
+    </div>
+    <div>
+      <h3>Documentos y evidencias</h3>
+      <p class="tag">Por incorporar</p>
+      <p>Aquí se enlazarán los documentos oficiales y las evidencias del proyecto cuando el colegio autorice su publicación.</p>
+    </div>
+  </div>
+</section>
+
+<section id="museo" aria-labelledby="t-museo">
+  <h2 id="t-museo">Museo Escolar de la Memoria</h2>
+  <p>Un museo digital con las colecciones del proyecto. Explora el catálogo o entra a la experiencia en 3D, que se desarrollará con A-Frame en <code>museo/index.html</code>.</p>
+  <p><a class="btn primary" href="museo/index.html">Ingresar a la experiencia 3D</a></p>
+  <h3>Catálogo de objetos digitales</h3>
+  <div id="catalogo"></div>
+</section>
+
+<section id="salidas" aria-labelledby="t-salidas"><h2 id="t-salidas">Salidas pedagógicas</h2><div id="salidas-lista"></div></section>
+<section id="fechas" aria-labelledby="t-fechas"><h2 id="t-fechas">Fechas conmemorativas</h2><div id="fechas-lista"></div></section>
+<section id="eventos" aria-labelledby="t-eventos"><h2 id="t-eventos">Visitas y eventos</h2><div id="eventos-lista"></div></section>
+<section id="reconocimientos" aria-labelledby="t-rec"><h2 id="t-rec">Reconocimientos</h2><div id="reconocimientos-lista"></div></section>
+<section id="alianzas" aria-labelledby="t-ali"><h2 id="t-ali">Alianzas institucionales</h2><div id="alianzas-lista"></div></section>
+<section id="galeria" aria-labelledby="t-gal"><h2 id="t-gal">Galería multimedia</h2><div id="galeria-lista"></div></section>
+
+<section id="contacto" aria-labelledby="t-con">
+  <h2 id="t-con">Contacto</h2>
+  <p>Este formulario es una demostración local. Valida los datos, pero no envía mensajes porque aún no existe un backend.</p>
+  <form id="form" novalidate>
+    <label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" aria-describedby="e-nombre"><p class="err" id="e-nombre"></p>
+    <label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" aria-describedby="e-correo"><p class="err" id="e-correo"></p>
+    <label for="f-asunto">Asunto</label><input id="f-asunto" name="asunto" aria-describedby="e-asunto"><p class="err" id="e-asunto"></p>
+    <label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" name="mensaje" rows="5" aria-describedby="e-mensaje"></textarea><p class="err" id="e-mensaje"></p>
+    <button type="submit">Validar mensaje</button>
+    <p id="estado" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <p><strong>Restauradores de la Memoria</strong>, Colegio Tom Adams IED.</p>
+  <p>Contacto institucional: <em>por confirmar</em>. Contenido de demostración marcado como pendiente de verificar.</p>
+  <p><a href="#inicio">Volver al inicio</a></p>
+</footer>
+
+<dialog id="lb" aria-labelledby="lb-t">
+  <figure><div class="ph big" id="lb-img" role="img"></div><figcaption id="lb-t"></figcaption></figure>
+  <button id="lb-x">Cerrar vista ampliada</button>
+</dialog>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
